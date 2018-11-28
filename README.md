@@ -1,5 +1,5 @@
 
-Code for synchronous bidirectional neural machine transltion (SB-NMT)
+Code for SB-NMT
 ===
 
 Contact
