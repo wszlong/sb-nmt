@@ -1,2 +1,4 @@
-# sb-nmt
-This is SB-NMT
+Code for Synchronous bidirectional neural machine transltion (SB-NMT)
+===
+
+
