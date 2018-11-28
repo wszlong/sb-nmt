@@ -1,8 +1,9 @@
 
 Code for SB-NMT
 ===
+This is the implementation of the paper: Synchronous Bidirectional Nueral Machine Translaiton. 
 
 Contact
 ==
 
-Email: wszlong@gmail.com
+If you have questions, suggestions and bug reports, please email wszlong@gmail.com.
