@@ -58,8 +58,9 @@ def translation_token_generator(data_dir, tmp_dir, train_src_name, train_tgt_nam
 
     token_vocab_src_dir = os.path.join(data_dir, vocab_src_name)
     token_vocab_tgt_dir = os.path.join(data_dir, vocab_tgt_name)
-    if not tf.gfile.Exists(token_vocab_src_dir) or not tf.gfile.Exists(token_vocab_tgt_dir):
+    if not tf.gfile.Exists(token_vocab_src_dir):
         tf.gfile.Copy(os.path.join(tmp_dir, vocab_src_name), token_vocab_src_dir)
+    if not tf.gfile.Exists(token_vocab_tgt_dir):
         tf.gfile.Copy(os.path.join(tmp_dir, vocab_tgt_name), token_vocab_tgt_dir)
 
     token_vocab_src = text_reader.TokenTextEncoder(vocab_filename=token_vocab_src_dir)
