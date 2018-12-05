@@ -35,11 +35,14 @@ def decode_from_file(predict_func, hparams, decode_from_file, decode_to_file, de
 
     def _save_until_eos(hyp):  #  pylint: disable=missing-docstring
         ret = []
-        index = 0
+        index = 1
         # until you reach <EOS> id
         while index < len(hyp) and hyp[index] != 1:
             ret.append(hyp[index])
             index += 1
+        ##If a R2L hypothesis wins, we reverse the tokens before presenting it
+        if hyp[0] == 3: ## 3:<r2l>, 2:<l2r>
+            ret.reverse()
         return np.array(ret)
 
     decodes = []
