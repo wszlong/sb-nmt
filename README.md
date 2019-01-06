@@ -16,10 +16,10 @@ Requirements
 
 Usage
 ---
-1. Construct pseudo training data using [Transformer](https://github.com/wszlong/transformer) as introduced in the paper. 
-2. Preprocessing. run `./datagen.sh`.
-3. Training. run `./train.sh`.
-4. Inference. run `./test.sh`.
+1. Preprocessing. Construct pseudo training data using [Transformer](https://github.com/wszlong/transformer) as introduced in the paper. 
+ and then run `./datagen.sh`.
+2. Training. run `./train.sh`.
+3. Inference. run `./test.sh`.
 
 ## Citation
 If you found this code useful in your research, please cite:
