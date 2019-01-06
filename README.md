@@ -7,6 +7,7 @@ This is the official codebase for the following paper, implemented in tensorflow
 Long Zhou, Jiajun Zhang, Chengqing Zong. **Synchronous Bidirectional Nueral Machine Translaiton.** In Transactions of ACL 2019.
 
 
+
 Requirements
 ---
 1. python2.7
