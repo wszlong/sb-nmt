@@ -11,7 +11,7 @@ Long Zhou, Jiajun Zhang, Chengqing Zong. **Synchronous Bidirectional Nueral Mach
 Requirements
 ---
 1. python2.7
-2. tensorflow >=1.4
+2. tensorflow-gpu >=1.4
 3. cuda >=8.0
 
 Usage
