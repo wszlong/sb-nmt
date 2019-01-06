@@ -22,9 +22,9 @@ Requirements
 Usage
 ---
 1. Construct pseudo training data.
-2. Preprocessing. run ./datagen.sh
-3. Training. run ./train.sh.
-4. Inference. run ./test.sh.
+2. Preprocessing. run './datagen.sh'.
+3. Training. run './train.sh'.
+4. Inference. run './test.sh'.
 
 Contact
 ---
