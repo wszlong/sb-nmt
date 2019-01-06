@@ -1,7 +1,13 @@
 
-Code for SB-NMT
+Code for Synchronous Bidirectional Nueral Machine Translaiton
 ===
-This is the implementation of the TACL paper: Synchronous Bidirectional Nueral Machine Translaiton. 
+
+This is the official codebase for the following paper, implemented in tensorflow:
+
+Long Zhou, Jiajun Zhang, Chengqing Zong. **Synchronous Bidirectional Nueral Machine Translaiton.** Transactions of ACL 2019.
+
+
+%This is the implementation of the TACL paper: Synchronous Bidirectional Nueral Machine Translaiton. 
 
 Requirements
 ---
