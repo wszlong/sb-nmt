@@ -35,6 +35,15 @@ def decode_from_file(predict_func, hparams, decode_from_file, decode_to_file, de
 
     def _save_until_eos(hyp):  #  pylint: disable=missing-docstring
         ret = []
+        index = 0
+        # until you reach <EOS> id
+        while index < len(hyp) and hyp[index] != 1:
+            ret.append(hyp[index])
+            index += 1
+        return np.array(ret)
+    
+    def _save_until_eos_and_reverse(hyp):  #  pylint: disable=missing-docstring
+        ret = []
         index = 1
         # until you reach <EOS> id
         while index < len(hyp) and hyp[index] != 1:
@@ -44,6 +53,7 @@ def decode_from_file(predict_func, hparams, decode_from_file, decode_to_file, de
         if hyp[0] == 3: ## 3:<r2l>, 2:<l2r>
             ret.reverse()
         return np.array(ret)
+    
 
     decodes = []
     scores = []
@@ -58,7 +68,7 @@ def decode_from_file(predict_func, hparams, decode_from_file, decode_to_file, de
                 tf.logging.info("Inference results INPUT: %s" % decoded_inputs)
 
                 decoded_outputs = targets_vocab.decode(
-                    _save_until_eos(outputs.flatten()))
+                    _save_until_eos_and_reverse(outputs.flatten()))
                 tf.logging.info("Inference results OUTPUT: %s" % decoded_outputs)
                 return decoded_outputs
 
