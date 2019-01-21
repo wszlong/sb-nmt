@@ -1,5 +1,5 @@
 
-Synchronous Bidirectional Nueral Machine Translation
+Synchronous Bidirectional Neural Machine Translation
 ===
 
 This is the official codebase for the following paper, implemented in tensorflow:
