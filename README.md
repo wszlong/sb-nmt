@@ -3,7 +3,7 @@ Synchronous Bidirectional Neural Machine Translation
 
 This is the official codebase for the following paper, implemented in tensorflow:
 
-Long Zhou, Jiajun Zhang, Chengqing Zong. **Synchronous Bidirectional Nueral Machine Translaiton.** [In Transactions of ACL 2019](https://arxiv.org/abs/1905.04847).
+Long Zhou, Jiajun Zhang, Chengqing Zong. **Synchronous Bidirectional Nueral Machine Translaiton.** In Transactions of ACL 2019. [PDF](https://arxiv.org/abs/1905.04847).
 
 
 Requirements
